@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>float</title>
+	<style>
+		body {
+			width: 800px;
+			margin: 0 auto;
+			/* 이렇게 하면 가운데 정렬 돼 */
+			font: 12px/1.6 'Malgun Gothic', sans-serif;
+			/* 12px 뒤에 1.6 : line-height(행간) */
+		}
+
+		.thumb {
+			float: left;
+			/* 이렇게 하면 가로형 메뉴 만들 수 있어!! */
+			/* 아랫줄의 p를 옆으로 데려올 수 있징 */
+			/* 한글로 따지면 이미지 겹쳐쓰기 기능 */
+
+			border: 2px solid black;
+			/* 근데 이렇게만 하면 아래에 무슨 틈이 생겨 그걸 없애주려면 */
+			/* img에 vertical-align : top 을 설정해줘야해 */
+		}
+
+		img {
+			vertical-align: top;
+			/* 이미지에 필수로 넣어줘야 하는 요소얌 */
+		}
+
+		.wrap .text {
+			clear: left;
+			/* float 해지하는 방법이얌 */
+			/* left | right | both 쓸 수 있어 */
+			/* left로 지정한 float 해지할 때는 left 쓰면 돼 */
+		}
+	</style>
+
+</head>
+<body>
+<h1>float sample</h1>
+<div class="wrap">
+<p class="thumb">
+	<img src="http://placehold.it/100x120?text=Profile" alt="">
+</p>
+<p class="text">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolorum modi quidem ab. Alias velit, mollitia autem dicta voluptates eum. Nisi quo aperiam repudiandae unde delectus velit inventore recusandae vitae, nemo quam sapiente sequi distinctio ipsam tempore eveniet dolorum et officiis, obcaecati nostrum neque at, nesciunt provident quis! Blanditiis nulla sint ratione corporis repellendus magni iure fugit, aliquid eaque esse illum sapiente ipsa, voluptatibus ullam assumenda id enim. Minus, doloribus?
+</p>
+</div>
+</body>
+</html>

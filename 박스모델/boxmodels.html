@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>boxmodels</title>
+	<style>
+		* {
+			/* * : 전체 선택자, 스타일 초기화할 때 사용할 수 있음 */
+		}
+
+		.box {
+			width: 600px;
+			/* border: 5px solid black; */
+			/* padding: 20px; */
+			/* padding : content와 border 사이의 간격 */
+			margin: 30px;
+			/* margin : border의 바깥쪽 */
+			background-color: lime;
+		}
+
+		.box2 {
+			border: 5px solid black;
+			padding: 20px;
+			/* content 크기는 위에 600으로 지정했는데, 이렇게 경계선 만들면
+			600보다 훨씬 커지지 */
+		}	
+
+		.box3 {
+			box-sizing: border-box;
+			/* 이렇게 하면 content : 600 사이즈에 딱 맞게 경계선이 생겨 */
+		}
+	</style>
+</head>
+<body>
+
+<div class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis illo delectus at itaque dicta commodi quae corporis atque cumque doloribus, eos libero magnam temporibus officia iste, ea voluptatibus, distinctio nihil!
+</div>
+<div class="box box2">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis illo delectus at itaque dicta commodi quae corporis atque cumque doloribus, eos libero magnam temporibus officia iste, ea voluptatibus, distinctio nihil!
+</div>
+<div class="box box2 box3">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis illo delectus at itaque dicta commodi quae corporis atque cumque doloribus, eos libero magnam temporibus officia iste, ea voluptatibus, distinctio nihil!
+</div>
+</body>
+</html>

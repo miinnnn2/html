@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>table</title>
+</head>
+<body>
+	
+<table border>
+	<caption>table title</caption>
+
+	<thead>
+		<tr>
+			<th scope="col">table header cell</th>
+			<th scope="col">table header cell</th>
+			<th scope="col">table header cell</th>
+			<!-- scope = col, row, colgroup, rowgroup -->
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+			<td rowspan="3">table date cell</td>
+			<td>table date cell</td>
+			<td>table date cell</td>
+		</tr>
+		<tr>
+			<!-- <td>table date cell</td> -->
+			<td>table date cell</td>
+			<td>table date cell</td>
+		</tr>
+		<tr>
+			<!-- <td>table date cell</td> -->
+			<td>table date cell</td>
+			<td>table date cell</td>
+		</tr>
+	</tbody>
+
+	<tfoot>
+		<tr>
+			<th scope="row">sum</th>
+			<td colspan="3">..</td>
+			<!-- <td scope="row">sum</td> -->
+			<!-- <td scope="row">sum</td> -->
+		</tr>
+	</tfoot>
+
+</table>
+
+</body>
+</html>

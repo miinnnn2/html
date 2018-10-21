@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>background - large img</title>
+	<style>
+	.box {
+		width: 600px;
+		padding: 20px;
+		border: 1px solid black;
+		background: url(img/main.jpg) no-repeat 0 0;
+	}	
+
+	.box2 {
+		background-size: 100% auto;
+		/* 가로는 맞춰지고, 세로는 알아서 잘라져 | 반대로도 되겠징 ㅎㅎ */
+		/* cover : 자동으로 알아서 맞춰줌 */
+		background-clip: content-box;
+		/* padding에는 그림이 안나오고, content 부분에만 그림 나오게 하는 것 */
+		background-origin: content-box;
+		/* content 위치부터 그림 시작 | clip은 padding 부분 그림 잘려서 나와 */
+	}
+
+	</style>
+</head>
+<body>
+
+<div class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quibusdam corrupti illo! Iure nesciunt laborum quisquam delectus, vel earum recusandae quasi rerum asperiores corrupti, inventore nisi eum expedita dignissimos magnam. 아이콘몬스터 사이트 엄청좋네
+</div>
+
+<div class="box box2">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quibusdam corrupti illo! Iure nesciunt laborum quisquam delectus, vel earum recusandae quasi rerum asperiores corrupti, inventore nisi eum expedita dignissimos magnam. 아이콘몬스터 사이트 엄청좋네
+</div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>background</title>
+	<style>
+	body {
+		background: url(img/small_img.png) no-repeat 90% 20px;
+		background-attachment: fixed;
+		/* 스크롤해도 이 이미지 계속 보이게 픽스하는거얄
+		예를 들어서, 어플에서 하단 탭은 계속 보이게 픽스돼있지? 비슷한 원리얌 */
+	}
+	.box {
+		width: 600px;
+		padding: 20px;
+		border: 1px solid black;
+		background-color: lime;
+		background-image: url(img/small_img.png);
+		background-repeat: no-repeat;
+		/* repeat | repeat-x | repeat-y | no-repeat */
+		background-position: 50% 50%;
+		/* 
+		left : 0 0;
+		top : 0;
+		center : 50%;
+		right : 100%;
+		bottom : 100%;
+		px로 쓸 수도 있어 ㅎㅎ
+		*/
+	}	
+	</style>
+</head>
+<body>
+
+<div class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quibusdam corrupti illo! Iure nesciunt laborum quisquam delectus, vel earum recusandae quasi rerum asperiores corrupti, inventore nisi eum expedita dignissimos magnam. 아이콘몬스터 사이트 엄청좋네
+</div>
+
+<div class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quibusdam corrupti illo! Iure nesciunt laborum quisquam delectus, vel earum recusandae quasi rerum asperiores corrupti, inventore nisi eum expedita dignissimos magnam. 아이콘몬스터 사이트 엄청좋네
+</div>
+
+<div class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quibusdam corrupti illo! Iure nesciunt laborum quisquam delectus, vel earum recusandae quasi rerum asperiores corrupti, inventore nisi eum expedita dignissimos magnam. 아이콘몬스터 사이트 엄청좋네
+</div>	
+</body>
+</html>

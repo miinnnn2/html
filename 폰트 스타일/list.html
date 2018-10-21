@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>list</title>
+	<style>
+		.list {
+			list-style: none;
+			/* 앞에 동그라미가 없어짐 */
+		}
+		
+		.list2 li {
+			list-style-position: inside;
+			/* inside | outside | inherit */
+			background-color: lime;
+			list-style-type: circle;
+			/* list-style-type : 목록 앞에 어떤 기호 나오게 할지 정하는 것
+			disc(검은 점) | square | upper-roman | hangul 등 */
+		}
+	</style>
+</head>
+<body>
+	
+<ul class="list">
+	<li>Lorem ipsum dolor sit amet, consectetur.</li>
+	<li>Lorem ipsum dolor sit amet, consectetur.</li>
+</ul>
+
+<ul class="list2">
+	<li>Lorem ipsum dolor sit amet, consectetur.</li>
+	<li>Lorem ipsum dolor sit amet, consectetur.</li>
+	<li>Lorem ipsum dolor sit amet, consectetur.</li>
+	<li>Lorem ipsum dolor sit amet, consectetur.</li>
+	<li>Lorem ipsum dolor sit amet, consectetur.</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>float clear</title>
+	<style>
+	
+	img {
+		vertical-align: top;
+	}
+
+	.wrap {
+		width: 800px;
+		margin: 0 auto;
+	}
+
+	.wrap:after {
+		/* wrap의 가장 뒤쪽 */
+		content: '';
+		display: block;
+		clear: both;
+		/* 이게 float 해지 방법 */
+	}
+
+	.wrap .thumb {
+		float: left;
+		border: 3px solid black;
+	}
+
+	.text {
+		clear: left;
+	}
+	</style>
+</head>
+<body>
+
+<div class="wrap">
+	<div class="thumb"><img src="http://placehold.it/100x120?text=1" alt=""></div>
+	<div class="thumb"><img src="http://placehold.it/100x120?text=2" alt=""></div>
+	<div class="thumb"><img src="http://placehold.it/100x120?text=3" alt=""></div>
+	<div class="thumb"><img src="http://placehold.it/100x120?text=4" alt=""></div>
+	<div class="thumb"><img src="http://placehold.it/100x120?text=5" alt=""></div>
+	<!-- clear 위치 -->
+</div>
+<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis deserunt aperiam delectus assumenda minima optio? Voluptatum ipsa cumque excepturi fuga odit, soluta architecto, perspiciatis maxime sequi dolores consectetur atque numquam, provident! Ut laboriosam illum ipsam, blanditiis temporibus eos labore ducimus fugit, deserunt porro amet modi cumque officia dolorum dignissimos quod. Eos at doloribus nemo suscipit cumque voluptatibus ad expedita voluptas?</p>
+</body>
+</html>

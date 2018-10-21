@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>word-break, white-space(단어 깨트리기, 줄바꿈 지정하기)</title>
+	<style>
+		body {
+			font-family: 'Malgun Gothic', sans-serif;
+			font-size: 16px;
+		}
+
+		.content, .content2, .content3 {
+			width: 500px;
+			border: 3px solid black;
+		}
+
+		.content p {
+			word-break: break-all;
+			/* 줄바꿈 없는 긴 문장을 알아서 정렬해주는 기능 */
+		}
+
+		.content2 p {
+			text-align: justify;
+		}
+
+		.content3 p {
+			text-align: justify;
+			word-break: break-all;
+		}
+
+		.white {
+			white-space: pre;
+			/* nowrap | pre | pre-wrap | pre-line */
+			/* 공백 유지하게 해주는 기능.. */
+		}
+	</style>
+
+</head>
+<body>
+<h1>word-break</h1>
+<div class="content">
+	<p>Loremipsumdolorsitamet, consecteturadipisicingelit. Liberoquidem, similiquesed,saepeaperiamiddoloribuserrordoloreoditaccusamusplaceat architecto</p>
+</div>
+
+<div class="content2">
+	<p>Loremipsumdolorsitamet, consecteturadipisicingelit. Liberoquidem, similiquesed,saepeaperiamiddoloribuserrordoloreoditaccusamusplaceat architecto</p>
+</div>
+
+<div class="content3">
+	<p>Loremipsumdolorsitamet, consecteturadipisicingelit. Liberoquidem, similiquesed,saepeaperiamiddoloribuserrordoloreoditaccusamusplaceat architecto</p>
+</div>
+
+<hr>
+
+<h1>white-space</h1>
+<div class="white">
+	lorem
+	Lorem ipsum dolor sit.
+	Lorem ipsum dolor sit amet.
+</div>
+
+</body>
+</html>

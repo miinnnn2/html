@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>table style</title>
+	<style>
+		.table {
+			/* border: 1px solid black; */
+			/* 이렇게 하면 테이블 안쪽에는 테두리가 안들어가 */
+			width: 800px;
+			table-layout: fixed;
+			/* 각 셀마다 크기를 일정하게 고정할 때 */
+			border-collapse: collapse;
+			/* 이렇게 해야 테두리가 2중으로 안생겨 */
+		}
+
+		.table th, td {
+			border: 1px solid green;
+			/* 이렇게 해야 테이블 안쪽에도 테두리 생겨 */
+		}
+
+		.table caption {
+			caption-side: bottom;
+		}
+
+		.table .empty2 {
+			empty-cells: hide;
+			/* show | hide */
+			/* border-collapse 상에서는 적용 안됨 */
+		}
+		
+	</style>
+</head>
+<body>
+	
+<table class="table">
+	<caption>table caption</caption>
+	<thead>
+		<tr>
+			<th scope="col">table header cell-1</th>
+			<th scope="col">table header cell-2</th>
+			<th scope="col">table header cell-3</th>
+			<th scope="col">table header cell-4</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>table data cell1-1</td>
+			<td>table data cell1-2</td>
+			<td>table data cell1-3</td>
+			<td>table data cell1-4</td>
+		</tr>
+		<tr>
+			<td>table data cell2-1</td>
+			<td>table data cell2-2</td>
+			<td>table data cell2-3</td>
+			<td>table data cell2-4</td>
+		</tr>
+		<tr>
+			<td>table data cell3-1</td>
+			<td>table data cell3-2</td>
+			<td>table data cell3-3</td>
+			<td>table data cell3-4</td>
+		</tr>
+		<tr>
+			<td>table data cell4-1</td>
+			<td>table data cell4-2</td>
+			<td class="empty1"></td>
+			<td class="empty2"></td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

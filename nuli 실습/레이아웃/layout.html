@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>layout, 2column</title>
+	<style>
+	/* reset */
+	html, body {margin: 0; padding: 0;}
+	img, fieldset {border: 0;}
+	img {vertical-align: top;}
+	ul, ol {list-style: none;}
+	em, address {font-style: normal;}
+	a {text-decoration: none;}
+	a:hover, a:active, a:focus {text-decoration: underline;}
+
+	/* layout */
+	#wrap {
+		width: 970px;
+		margin: 0 auto;
+		background-color: grey;
+	}
+	#header {
+		padding: 20px;
+		background-color: red;
+	}
+	#container {
+		padding-bottom: 30px;
+		*zoom: 1;
+		background-color: lime;
+	}
+	#container:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	#content {
+		float: right;
+		width: 600px;
+		background-color: blue;
+	}
+	#content .inn {
+		padding: 20px;
+	}
+	#container .aside {
+		float: left;
+		width: 370px;
+		background-color: yellow;
+	}
+	#container .aside .inn {
+		padding: 20px;
+	}
+	#footer {
+		padding: 20px;
+		background-color: silver;
+	}
+	</style>
+</head>
+<body>
+<div id="wrap">
+	<!-- header -->
+	<div id="header">
+		<h1>LOGO</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat rerum dolorum temporibus totam numquam aliquam cumque, minima ullam, eum, architecto nesciunt, in quasi veniam inventore dolore aspernatur ad est dicta.</p>
+	</div>
+	<!-- //header -->
+	<!-- container -->
+	<div id="container">
+		<!-- content -->
+		<div id="content">
+		<div class="inn">
+			<h2>Content</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, quae, ipsam. Commodi, vel amet placeat, eveniet id blanditiis velit a aspernatur asperiores provident quae pariatur nihil quaerat! Voluptatibus, expedita, porro.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi magnam nobis corrupti deserunt velit repudiandae, magni aspernatur tempora, provident asperiores autem in perferendis voluptates laborum accusamus! Optio voluptates molestiae delectus.</p>
+		</div>
+		</div>
+		<!-- //content -->
+		<!-- aside -->
+		<div class="aside">
+		<div class="inn">
+			<h2>Aside</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+		</div>
+		</div>
+		<!-- //aside -->	
+	</div>
+	<!-- //container -->
+	<!-- footer -->
+	<div id="footer">
+		<address>Lorem ipsum dolor sit amet.</address>
+		<p>Copyright &copy; </p>
+	</div>
+	<!-- //footer -->
+</div>
+</body>
+</html>

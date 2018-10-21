@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+</head>
+<body>
+
+<form action="/join" method="post">
+	<fieldset>
+		<legend>form tag legend</legend>
+		<p>
+			<label for="name">이름</label>
+			<input type="text" id="name" name="user_name" value="이름을 입력하세요">
+			<!-- label for 부분과 input id 부분 일치시켜야 서로 연결됨 -->
+		</p>
+		<p>
+			<label for="id">아이디</label>
+			<input type="text" id="id" name="user_id" value="아이디를 입력하세요">
+			<input type="button" value="아이디 중복확인">
+		</p>
+		<p>
+			<label for="password">비밀번호</label>
+			<input type="password" id="password" name="user_pass" placeholder="비밀번호를 입력하세요">
+		</p>
+		<p>
+			<label for="comment">의견</label>
+			<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+		</p>
+		<p>
+			<label for="region">지역선택</label>
+			<select name="region" id="region">
+				<option value="">서울</option>
+				<option value="">인천</option>
+				<option value="">부산</option>
+				<option value="">대구</option>
+				<option value="">대전</option>
+			</select>
+		</p>
+		<p>
+			<span>성별</span>
+			<label for="male">남자</label>
+			<input type="radio" id="male" name="choice" value="male">
+			<label for="female">여자</label>
+			<input type="radio" id="female" name="choice" value="female">
+			<!-- 단수선택만 가능한 옵션의 경우, name값을 같게 설정해줘야함 -->
+			<!-- 그래서 여기는 "choice"라는 이름으로 동일하게 설정해줬음 -->
+		</p>
+		<p>
+			<span>당신의 취미는?</span>
+			<label for="travel">여행가기</label>
+			<input type="checkbox" id="travel" name="travel" value="travel">
+			<label for="movie">영화보기</label>
+			<input type="checkbox" id="movie" name="movie" value="movie">
+			<label for="music">음악듣기</label>
+			<input type="checkbox" id="music" name="music" value="music">
+		</p>
+	</fieldset>
+
+<p>
+	<input type="submit" name="submit" value="전송">
+	<input type="reset" name="cancel" value="취소">
+</p>
+</form>	
+
+</body>
+</html>

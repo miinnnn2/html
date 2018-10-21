@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>multi columns</title>
+	<style>
+	body {
+		font: 12px arial, sans-serif;
+	}
+
+	#wrap {
+		width: 900px;
+		margin: 0 auto;
+		column-count: 3;
+		/* 칼럼의 개수 : 3개 */
+		column-gap: 20px;
+		column-rule: 1px dashed black;
+		/* 칼럼 사이사이에 선 넣기 */
+		columns: 300px 3;
+		/* 300px넓이의 칼럼 3개 */
+	}
+
+	#wrap h1 {
+		column-span: all;
+	}
+	s
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<h1>multi columns</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+	</div>
+</body>
+</html>

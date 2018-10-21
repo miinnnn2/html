@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Image & Text</title>
+	<!-- style -->
+	<style>
+	#content {
+		width: 1200px;
+	}
+	ul .upload {
+		background-color: lime;
+		*zoom: 1;
+	}
+	ul .upload:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.upload li {
+		list-style: none;
+		float: left;
+		margin: 10px;
+	}
+	.upload li .thumb {
+		width: 180px;
+		height: 180px;
+		background: url(img/@tmp.png) no-repeat;
+	}
+	.upload li .thumb a {}
+	.upload li .btn_area {
+		padding: 15px 0;
+		text-align: center;
+	}
+	.upload li .btn_area a {}
+	</style>
+</head>
+<body>
+
+<div id="content">
+	<div>
+		<ul class="upload">
+			<li>
+				<div class="thumb">
+					<a href="#"><img src="img/@tmp_thmb.gif" width="180" height="180" alt="썸네일">
+					</a>
+				</div>
+				<div class="btn_area">
+					<a href="#"><img src="img/btn_edt.gif" width="39" height="22" alt="수정">
+					</a>
+					<a href="#"><img src="img/btn_del.gif" width="39" height="22" alt="삭제">
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="thumb"></div>
+				<div class="btn_area">
+					<a href="#"><img src="img/btn_upld_img.gif" width="80" height="22" alt="업로드">
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="thumb"></div>
+				<div class="btn_area">
+					<a href="#"><img src="img/btn_upld_img.gif" width="80" height="22" alt="업로드">
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="thumb"></div>
+				<div class="btn_area">
+					<a href="#"><img src="img/btn_upld_img.gif" width="80" height="22" alt="업로드">
+					</a>
+				</div>
+			</li>
+		</ul>
+	</div>	
+</div>
+</body>
+</html>

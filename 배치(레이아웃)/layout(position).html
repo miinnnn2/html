@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>position</title>
+	<style>
+	.box {
+		position: absolute;
+		/* absolute(절대적인 위치) | relative | fixed | static */
+		left: 20px;
+		top: 20px;
+		width: 400px;
+		padding: 20px;
+		background-color: yellow;
+		font: 14px/1.6 verdana, sans-serif;
+	}
+
+	.box:first-letter {
+		font-weight: bold;
+	}
+
+	.a {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 100;
+		/* 숫자 클수록 그림 맨 앞으로 데려올 수 있어 */
+		/* 원래는 제일 나중에 지정된애가 제일 앞으로 오는건데 
+		a를 맨 앞으로 데려오고 싶으면 z-index 사용 */
+		background-color: rgba(255,0,0,.8);
+	}
+
+	.b {
+		position: absolute;
+		left: 50px;
+		top: 50px;
+		background-color: rgba(0,255,0,.8);
+	}
+
+	.c {
+		position: absolute;
+		left: 100px;
+		top: 100px;
+		background-color: rgba(0,0,255,.8);
+	}
+
+	</style>
+</head>
+<body>
+
+<div class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, ex. Doloremque quae nostrum sed aperiam odio inventore, similique ex voluptatibus incidunt consequuntur. Earum dolorem, iste. Magnam corporis dolore ipsa culpa.
+</div>
+<div class="box a">
+	A Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, ex. Doloremque quae nostrum sed aperiam odio inventore, similique ex voluptatibus incidunt consequuntur. Earum dolorem, iste. Magnam corporis dolore ipsa culpa.
+</div>
+<div class="box b">
+	B Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, ex. Doloremque quae nostrum sed aperiam odio inventore, similique ex voluptatibus incidunt consequuntur. Earum dolorem, iste. Magnam corporis dolore ipsa culpa.
+</div>
+<div class="box c">
+	C Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, ex. Doloremque quae nostrum sed aperiam odio inventore, similique ex voluptatibus incidunt consequuntur. Earum dolorem, iste. Magnam corporis dolore ipsa culpa.
+</div>
+<hr>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit reiciendis aspernatur quas tempore eligendi. Deleniti dolorem vitae necessitatibus adipisci eaque rem voluptate consequuntur illum, asperiores quaerat, repudiandae, minima! Distinctio, ipsam!
+</p>	
+</body>
+</html>

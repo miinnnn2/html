@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Daum Mainpage</title>
+	<style>
+	/* reset */
+	html, body {width: 100%; height: 100%;}
+	body, ul, li {margin: 0; padding: 0;}
+	body {font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; font-size: 13px;}
+	li {list-style: none;}
+	em {font-style: normal;}
+	img {vertical-align: top;}
+	a {text-decoration: none;}
+	a:hover, a:focus {text-decoration: underline;}
+
+	/* style */
+	#content {width: 990px; margin: 0 auto;}
+	.entertainment {}
+	.entertainment ul {*zoom: 1;}
+	.entertainment ul:after {content: ''; display: block; clear: both;}
+	.entertainment li {width: 192px; float: left; margin: 17px 17px 0 0; color: #222;}
+	.entertainment li a {display: block; position: relative; color: inherit;}
+	.entertainment li a:hover {color: #118eff;}
+	.entertainment li a .thumb {}
+	.entertainment li a .thumb img {width: 100%}
+	.entertainment li a .txt {line-height: 18px; display: block; margin-top: 8px; padding: 0 10px;}
+	.entertainment li a .ico {display: block; position: absolute; top: 87px; right: 10px; width: 23px; height: 23px; background: url(img/ico.png) no-repeat; text-indent: -9999em;}
+	.entertainment li a .ico.video {background-position: -70px 0;}
+	.entertainment li a .ico.pic {background-position: -40px 0}
+	</style>
+</head>
+<body>
+<div id="content">
+	<div class="entertainment">
+		<ul>
+			<li>
+				<a href="#">
+					<span class="thumb"><img src="img/thumb1.jpeg" alt=""></span>
+					<em class="txt">황제성, 첫 출연한 '런닝맨' 출연료에 동공 확...</em>
+					<span class="ico video">동영상</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="thumb"><img src="img/thumb2.jpeg" alt=""></span>
+					<em class="txt">'주말' 라미란, 모두가 놀란 엄청난 요리 실력</em>
+					<span class="ico video">동영상</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="thumb"><img src="img/thumb3.jpeg" alt=""></span>
+					<em class="txt">"新 낚시왕"..'너는 내 운명' 한고은♥신영...</em>
+					<span class="ico pic">사진</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span class="thumb"><img src="img/thumb4.jpeg" alt=""></span>
+					<em class="txt">멜깁슨, 35세 연하 여친과 UFC 경기 관람 포착</em>
+					<span class="ico pic">사진</span>
+				</a>
+			</li>			
+		</ul>
+	</div>
+</div>
+</body>
+</html>

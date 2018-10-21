@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>말줄임 표현(...)</title>
+	<style>
+	#wrap {
+		width: 600px;
+		padding: 20px;
+		margin: 0 auto;
+		border: 1px solid black;
+		border-width: 0 1px;
+		font: 12px arial, sans-serif;
+	}
+	
+	.sample {
+		overflow: hidden;
+		width: 100%;
+		white-space: nowrap;
+		/* 줄바꿈 못하게 막는 것 */
+		text-overflow: ellipsis;
+		/* 넘치는 텍스트는 ... 으로 표현하게 */
+	}
+
+	.sample2 {
+		display: block;
+		/* 인라인 태그는 display : block 필수로 해야해 */
+		overflow: hidden;
+		width: 100%;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+		
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<p class="sample">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis numquam voluptatem animi non ullam, accusamus sint totam, vitae possimus accusantium fugit incidunt expedita, eius facilis provident recusandae, eligendi debitis! Nihil.</p>
+		<span class="sample2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error facere labore quibusdam delectus ipsam veritatis explicabo ab, sunt, non, iste quisquam corporis quae neque rem assumenda blanditiis alias quia molestias.</span>
+	</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>image map</title>
+</head>
+<body>
+	
+<h1>이미지맵</h1>
+<p>이미지맵이란 사진 하나에 링크를 여러개 달고 싶을 경우 사용</p>
+<p>예를 들어, 대한민국 지도 사진에 서울/인천/경기 링크 따로 달고싶은 경우</p>	
+
+<p>
+	<img src="img/korea_map.gif" usemap="#map" alt="대한민국 지도">
+	<map name="map" id="map">
+		<area shape="rect" coords="15,26,218,84" href="" alt="">
+		<!-- 직사각형인 경우, 좌상단 X/Y좌표 + 우하단 X/Y좌표 -->
+		<area shape="circle" coords="" href="" alt="">
+		<!-- 원일 경우, 중간 X/Y좌표 + 반지름 길이 -->
+		<area shape="poly" coords="" href="" alt="">
+		<!-- 육각형인 경우, 모든 X/Y좌표 -->
+	</map>
+</p>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>font / text</title>
+	<style>
+		body, h1, h2 {
+			font-family: '돋움',dotum,Helvetica,sans-serif;
+			font-family: 'Malgun Gothic', Helvetica, sans-serif;
+			/* 한글 폰트는 꼭 '' 따옴표 안에 넣어야 함
+			serif : 명조체
+			sans-serif : 고딕체
+			cursive : 필기체
+			monospace : 고정폭 */
+
+			font-size: 12px;
+		}
+
+		h1 {
+			background-color: green;
+			font-size: 2.5em;
+			letter-spacing: .1em;
+			/* 자간 조절 */
+			text-transform: uppercase;
+			/* uppercase(다 대문자) | lowercase(다 소문자) | capitalize(단어의 첫 글자만 대문자)*/
+		}
+
+		h1 small {
+			background-color: lime;
+			font-size: .5em;
+			vertical-align: baseline;
+			/* top | middle | baseline | bottom (위아래 정렬) | 5px 등 숫자도 가능 */
+		}
+
+		h2 {
+			font-size: 1.2em;
+			font-variant: small-caps;
+			/* 소문자를 대문자로 바꿔주지만, 크기는 유지한다(기존 대문자만 크게) */
+
+			text-decoration: line-through;
+			/* underline | overline | line-through(취소선) | none */
+		}
+
+		.lead {
+			font-size: 1.2em;
+			font-weight: bold;
+			/* 굴자의 굵기 */
+			/* bold | bolder | 600 ~ 900 값을 넣을 수도 있음 */
+			/* normal | lighter | 100 ~ 500 값을 넣을 수도 있음 */
+			word-spacing: 1em;
+			/* 단어와 단어 사이 간격 조절(자간 간격은 letter-spacing) */
+		}
+
+		.text {
+			text-indent: 1em;
+			/* 텍스트 들여쓰기 */
+			text-align: center;
+			/* left | center | right | justify(양쪽 정렬) */
+			line-height: 1.6em;
+			/* 행간 조절 */
+			white-space: nowrap;
+			/* 줄바꿈 안되게 하는 것? */
+		}
+
+		address {
+			font-style: normal;
+			/* normal | italic | oblique */
+		}
+	</style>
+</head>
+<body>
+	
+<div id="wrap">
+	<h1>style sample <small>sample</small></h1>
+	<h2>Style Sample(font variant)</h2>
+	<p class="lead">Lorem ipsum dolor sit.</p>
+	<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, sequi, assumenda tempora quis perspiciatis porro sint excepturi repellat tempore pariatur iure rerum ipsa nobis saepe sunt, totam earum impedit ducimus.</p>
+	<hr>
+	<address>add : Lorem ipsum dolor sit amet, consectetur.</address>
+</div>
+
+</body>
+</html>
