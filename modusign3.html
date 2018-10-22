@@ -21,7 +21,6 @@
 	#wrap {}
 	#header {
 		height: 640px;
-		border: 1px solid green;
 		background: url(img/main.jpg) 60%;
 	}
 	#header .header_navi {
@@ -40,7 +39,7 @@
 	#header .header_navi .main_menu {
 		height: inherit;
 		float: left;
-		border: 1px solid yellow;
+		/*border: 1px solid yellow;*/
 		margin-right: 30px;
 		margin-top: -28px;
 		padding: 29px 0;
@@ -64,7 +63,7 @@
 		display: none;
 		position: absolute;
 		padding: 0;
-		border: 1px dashed red;
+		/*border: 1px dashed red;*/
 		width: 100%;
 		margin-top: 25px;
 		padding: 30px 0;
@@ -75,7 +74,7 @@
 	}
 	#header .header_navi .navi .navi_hidden li {
 		display: inline-block;
-		border: 1px solid blue;
+		/*border: 1px solid blue;*/
 		margin-right: 30px;
 	}
 	#header .header_navi .main_menu:hover .navi_hidden {
@@ -84,7 +83,7 @@
 	#header .header_navi .btn{
 		position: absolute;
 		margin-top: -64px;
-		border: 1px dashed white;
+		/*border: 1px dashed white;*/
 		margin-left: 1220px;
 		padding: 0px 0px;
 		font-size: 14px;
@@ -153,7 +152,71 @@
 	#header .header_main .btn li.download {
 		background-color: #fff;
 	}
-
+	#notice {
+		position: relative;
+		background-color: #3d7ef1;
+		text-align: center;
+		margin-top: -1px;
+		padding: 30px 0;
+		font-size: 18px;
+		font-weight: 100;
+	}
+	#notice strong {
+		font-weight: 400;
+	}
+	#notice span:nth-child(2) {
+		padding: 0 40px 0 20px;
+	}
+	#notice span img {
+		position: absolute;
+		margin-top: -3px;
+		margin-left: -50px;
+	}
+	#notice span:nth-child(3)>a {
+		text-decoration: underline;
+	}
+	#contents .contents1 {
+		position: relative;
+		height: 700px;
+		background-color: #f5f8fa;
+	}
+	#contents .contents1 video {
+		margin-top: 70px;
+		margin-left: -170px;
+	}
+	#contents .contents1 .text {
+		position: absolute;
+		display: block;
+		width: 40%;
+		height: 62.7%;
+		margin-top: -665px;
+		margin-left: 57%;
+		padding: 130px 0;
+		color: #2e3949;
+	}
+	#contents .contents1 .text h2 {
+		font-size: 42px;
+		font-weight: 200;
+		line-height: 1.3em;
+	}
+	#contents .contents1 .text img {
+		width: 500px;
+		padding: 30px 0;
+	}
+	#contents .contents1 .text span:nth-child(3) {
+		display: block;
+		line-height: 1.6em;
+	}
+	#contents .contents1 .text .btn {
+		width: 130px;
+		border: 1px solid #2e3949;
+		background-color: #2e3949;
+		color: white;
+		font-weight: 200;
+		padding: 15px 30px;
+		text-align: center;
+		margin-top: 30px;
+	}
 	</style>
 </head>
 <body class="body">
@@ -223,6 +286,38 @@
 							소개자료 다운로드
 						</li>
 					</ul>
+				</div>
+			</div>
+		<div id="notice">
+			<div class="notice">
+				<span>
+					<a href="#"><img src="img/notice.svg" alt="notice"></a>
+				</span>
+				<span>
+					<a href="#">[09.06] <strong>'카카오톡 서명 요청 기능'</strong> 출시! 지금 바로 더욱 새로워진 모두싸인을 만나보세요!</a>
+				</span>
+				<span><a href="#">자세히 알아보기 ></a></span>
+			</div>
+		</div>
+		<div id="contents">
+			<div class="contents1">
+				<div class="video">
+					<video src="img/video1.mp4"></video>
+				</div>
+				<div class="text">
+					<h2><strong>5분만에</strong><br>끝내는 계약업무</h2>
+					<span><img src="img/video1.png" alt=""></span>
+					<span>
+						계약서 파일을 업로드하여 서명을 요청해 보세요.<br>
+						상대방은 회원가입 없이 이메일, 카카오톡 링크를 통해 서명할 수<br>
+						있습니다.<br>
+						언제 어디서든 5분만에 계약을 체결해 보세요.
+					</span>
+					<div class="btn">
+						<span><a href="">
+						전자계약 체험하기 ></a>
+						</span>
+					</div>
 				</div>
 			</div>
 		</div>
